@@ -1,0 +1,21 @@
+<div class="col-md-12">
+      <% @products.each do |product| %>
+        <div class="col-md-4">
+          <td><%= link_to(product.title, product_path(product))%></td>
+          <td><%= product.description %></td>
+          <td>
+          <%= link_to product_path(product) do %>
+            <% if product.image.present? %>
+              <%= image_tag(product.image.thumb, class: "thumbnail") %>
+            <% else %>
+               <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail")%>
+            <% end %>
+          <% end %>
+          </td>
+          <br>
+          <td><%= product.price %></td>
+          <br>
+          <td><%= product.quantity %></td>
+        </div>
+      <% end %>
+</div>
