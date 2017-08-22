@@ -4,4 +4,7 @@ class CartsController < ApplicationController
     current_cart.clear!
     redirect_to :back
   end
+  def checkout
+    @order = Order.new 
+  end
 end
