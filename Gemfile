@@ -37,6 +37,7 @@ gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'font-awesome-rails'
+gem 'letter_opener', group: :development
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
