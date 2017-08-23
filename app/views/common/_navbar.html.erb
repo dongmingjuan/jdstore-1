@@ -28,6 +28,9 @@
                           <%= link_to("Admin Panel", admin_products_path )%>
                         <% end %>
                       </li>
+                      <li>
+                        <%= link_to("My Orders", account_orders_path)%>
+                      </li>
                         <li> <%= link_to("退出", destroy_user_session_path, method: :delete) %> </li>
                     </ul>
                   </li>
